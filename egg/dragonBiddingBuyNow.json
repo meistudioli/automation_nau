@@ -1,0 +1,137 @@
+[
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@CREATEBUYNOWCLEAR"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@CREATEBIDDINGBUYNOW"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C39332X",
+		"note": "[管理商品][列表][商品][操作][上架中][競標品][無人出價]click取消出價"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C39374X",
+		"note": "[管理商品][列表][商品][操作][已下架][競標品][沒賣出]click重新刊登"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4796538X",
+		"note": "[商品管理][列表][競標品][標題][編輯][上架中] 標題可編輯成功"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C4343X",
+		"note": "[商品頁]Header"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C4344X",
+		"note": "[商品頁]Footer"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C4394X",
+		"note": "[商品頁][商品資訊][商品標題]顯示"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C4396X",
+		"note": "[商品頁][商品資訊][商品副標題]顯示"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C4442X",
+		"note": "[商品頁][商品資訊][出價模組]顯示"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C4505X",
+		"note": "[商品頁][Navigation][商品資訊]顯示上傳的第1~9張圖"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C3735XX",
+		"note": "[商品頁][商品圖][主圖區][主圖>1400x1400]放大圖顯示"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_bidding.feature",
+		"tags": "@C4796099XX",
+		"note": "[商品頁][Navigation][商品資訊]影片播放"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C4507X",
+		"note": "[商品頁][Navigation][商品資訊]賣家設的商品描述(文字)"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C4637X",
+		"note": "[出價模組][預覽]模組顯示"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C598735XX",
+		"note": "[買家動態][商品問答][列表][操作][已回覆]顯示已回覆 "
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C598882XX",
+		"note": "[最愛賣家][刪除]成功執行刪除"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@C598800XX",
+		"note": "[追蹤商品][直購商品][刪除]成功執行刪除"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@BUYBIDDINGBUYNOWTHUS711"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@CVSEXECUTESHIPMENT",
+		"note": "[訂單列表][尚未出貨][CVS] 點擊訂單操作之執行出貨"
+	},
+	{
+		"feature": "cucumber/orderList_buyer.feature",
+		"tags": "@RATINGBUYER2SELLER",
+		"note": "[訂單列表][給賣家評價] 點擊訂單操作之給賣家評價且成功給評"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@RATINGSELLER2BUYER",
+		"note": "[訂單列表][給買家評價] 點擊訂單操作之給買家評價且成功給評"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@CREATEBIDDINGBUYNOW"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@BUYBIDDINGBUYNOWTHUSFAMILY"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@C49035"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@CREATEBIDDINGBUYNOW"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@BUYBIDDINGBUYNOWTHUSCOD"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@C49035"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@OFFSHELFCLEAR"
+	}
+]

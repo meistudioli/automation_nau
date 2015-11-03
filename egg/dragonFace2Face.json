@@ -1,0 +1,18 @@
+[
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@CREATEBASICWITHSHIPTYPE"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@ORDERCONFIRMWITHSHIPTYPEFACE2FACE"	
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@BUYMULTISPECITEMWITHSHIPTYPEFACE2FACE"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@OFFSHELFBASIC"
+	}
+]

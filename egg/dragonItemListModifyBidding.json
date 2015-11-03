@@ -1,0 +1,20 @@
+[
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@CREATEBIDDINGBASIC"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4796531",
+		"note": "[商品管理][列表][競標品][標題][編輯][上架中] 標題可編輯成功"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4796584",
+		"note": "[商品管理][列表][競標品][金額][起標價][編輯][上架中] 金額可編輯成功"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@OFFSHELFBIDDINGBASIC"
+	}
+]

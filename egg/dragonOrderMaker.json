@@ -1,0 +1,19 @@
+[
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@CREATEBASIC"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@BUYMULTISPECITEMTHUSFAMILYMART"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@C4627962",
+		"note": "[取消訂單][其它原因取消]成功取消"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@OFFSHELFBASIC"
+	}
+]

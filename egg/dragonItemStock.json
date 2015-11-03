@@ -1,0 +1,41 @@
+[
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@CREATEBASIC"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4797511",
+		"note": "[商品管理][列表][直購品][庫存][編輯][上架中] 庫存可編輯成功"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@OFFSHELFBASIC"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@CREATEBASICONELAYERSPEC"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4797511",
+		"note": "[商品管理][列表][直購品][庫存][編輯][上架中] 庫存可編輯成功"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@OFFSHELFBASIC"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@CREATEBIDDINGBASIC"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4797529",
+		"note": "[商品管理][列表][競標品][庫存][編輯][上架中] 庫存可編輯成功"
+	},
+	{
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@OFFSHELFBIDDINGBASIC"
+	}
+]

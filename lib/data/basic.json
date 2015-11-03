@@ -1,0 +1,106 @@
+{
+    "buyNow": {
+        "basic": {
+            "mid": "100096331785",
+            "itemTitle": "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei",
+            "itemBrief": "[直購品] 測試商品請勿下標, 所有訂單一律取消",
+            "salePrice": 10,
+            "itemDesc": "[直購品] 測試商品請勿下標, 所有訂單一律取消",
+            "payType": "711,family,cod",
+            "barCode": "4710018135606",
+            "itemNumber": "ABC",
+            "itemLocation": "台北市",
+            "videoSet": "http://meistudioli.tumblr.com/post/125311009171",
+            "shipFee": 100,
+            "imageAmount": 9,
+            "totalQuantity": 60,
+            "specs": [
+                {
+                    "specKey": "大小",
+                    "specValue": [
+                        "超大",
+                        "大",
+                        "中",
+                        "小",
+                        "超小"
+                    ]
+                },
+                {
+                    "specKey": "顏色",
+                    "specValue": [
+                        "黃",
+                        "綠",
+                        "紅"
+                    ]
+                }
+            ],
+            "owner": "seller_store_b2c"
+        },
+        "clear": {
+            "mid": "100096331876",
+            "itemTitle": "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei",
+            "itemBrief": "[直購品] 測試商品請勿下標, 所有訂單一律取消",
+            "salePrice": 10,
+            "itemDesc": "[直購品] 測試商品請勿下標, 所有訂單一律取消",
+            "payType": "711,family",
+            "shipFee": 100,
+            "imageAmount": 1,
+            "owner": "seller_store_b2c"
+        }
+    },
+    "bidding": {
+        "basic": {
+            "mid": "100096331974",
+            "itemTitle": "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei",
+            "itemBrief": "[競標] 測試商品請勿下標, 所有訂單一律取消",
+            "startPrice": 10,
+            "videoSet": "http://meistudioli.tumblr.com/post/125311009171",
+            "itemDesc": "[競標] 測試商品請勿下標, 所有訂單一律取消",
+            "payType": "711,family,cod",
+            "imageAmount": 9,
+            "owner": "seller_store_b2c"
+        },
+        "buynow": {
+            "mid": "100096331974",
+            "itemTitle": "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei",
+            "itemBrief": "[競標] 測試商品請勿下標, 所有訂單一律取消",
+            "startPrice": 10,
+            "videoSet": "http://meistudioli.tumblr.com/post/125311009171",
+            "itemDesc": "[競標] 測試商品請勿下標, 所有訂單一律取消",
+            "payType": "711,family,cod",
+            "imageAmount": 9,
+            "buynowPrice": 20,
+            "owner": "seller_store_b2c"
+        }
+    },
+    "codDeliver": {
+        "formats": {
+            "breadcrumb": "賣家管理>管理訂單>.*訂單明細>執行出貨",
+            "title": "您正準備對以下勾選商品進行出貨",
+            "shipinfo": "\\s*尚未出貨\\s*",
+            "reciverinfo": "\\s*我是收件人/台北市115南港區三重路66號14樓/0979111111\\s*",
+            "shipnotice": "請閱讀「郵局貨到付款」出貨注意事項:",
+            "resulttitle": "出貨檔上傳完成，請先列印出貨單",
+            "shipmentresultnote": ".*郵局物流手續費.*",
+            "shipmentresultdescription": "您可以持出貨單至郵局進行.*寄貨.*，出貨單包含.*特約郵費單.*及.*劃撥存款單.*。請注意臨櫃.*不需繳費.*。",
+            "logisticId": ".*物流編號\\s*:\\s*\\d+",
+            "orderdetailshipmentinfo": "\\d{4}/\\d{2}/\\d{2} 出貨檔上傳成功，待寄貨.*物流編號:.*\\d+.*"
+        }
+    },
+    "orderListSeller": {
+        "formats": {
+            "shipStatuswaitforship": "出貨狀態: 出貨檔上傳成功，待寄貨(.*物流編號:\\d+.*)"
+        },
+        "shipOptions": [
+            "一般訂單出貨",
+            "全家訂單出貨-物流交寄",
+            "7-ELEVEN訂單出貨-物流交寄",
+            "郵局貨到付款訂單出貨-郵局交寄"
+        ]
+    },
+    "codMultiDeliver": {
+        "formats": {
+            "breadcrumb": "賣家管理>管理訂單>多筆訂單執行出貨"
+        }
+    }
+}

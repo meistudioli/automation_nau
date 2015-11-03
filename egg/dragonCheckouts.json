@@ -1,0 +1,26 @@
+[
+	{
+		"feature": "cucumber/flow/flow.feature",
+		"tags": "@CHECKOUTBUYNOWTHUSFAMILYMART"
+	},
+	{
+		"feature": "cucumber/flow/flow.feature",
+		"tags": "@CHECKOUTBUYNOWTHUS711"
+	},
+	{
+		"feature": "cucumber/flow/flow.feature",
+		"tags": "@CHECKOUTBIDDINGTHUSFAMILYMART"
+	},
+	{
+		"feature": "cucumber/flow/flow.feature",
+		"tags": "@CHECKOUTBIDDINGTHUS711"
+	},
+	{
+		"feature": "cucumber/flow/flow.feature",
+		"tags": "@CHECKOUTMULTISPECTHUSFAMILYMART"
+	},
+	{
+		"feature": "cucumber/flow/flow.feature",
+		"tags": "@CHECKOUTMULTISPECTHUS711"
+	}
+]

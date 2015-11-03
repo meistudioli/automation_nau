@@ -1,0 +1,20 @@
+[
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@CREATEBASIC"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4796513",
+		"note": "[商品管理][列表][直購品][標題][編輯][上架中] 標題可編輯成功"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4796565",
+		"note": "[商品管理][列表][直購品][金額][促銷價][編輯][上架中] 金額可編輯成功"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@OFFSHELFBASIC"
+	}
+]

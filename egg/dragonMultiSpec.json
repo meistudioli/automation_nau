@@ -1,0 +1,142 @@
+[
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@CREATEBASIC"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C39316",
+		"note": "[管理商品][列表][商品][操作][上架中][直購品][下架]click確定"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C39352",
+		"note": "[管理商品][列表][商品][操作][已下架][直購品][沒賣出][上架]click確定"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4796513",
+		"note": "[商品管理][列表][直購品][標題][編輯][上架中] 標題可編輯成功"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4796565",
+		"note": "[商品管理][列表][直購品][金額][促銷價][編輯][上架中] 金額可編輯成功"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@C4797511",
+		"note": "[商品管理][列表][直購品][庫存][編輯][上架中] 庫存可編輯成功"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_buyNow.feature",
+		"tags": "@C3712",
+		"note": "[商品頁]Header"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_buyNow.feature",
+		"tags": "@C3713",
+		"note": "[商品頁]Footer"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@C3790",
+		"note": "[商品頁][商品資訊][商品標題]顯示"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@C3792",
+		"note": "[商品頁][商品資訊][商品副標題]顯示"
+	},	
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@C3796",
+		"note": "[商品頁][商品資訊][原價][無促銷價]顯示定價"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_buyNow.feature",
+		"tags": "@C4115",
+		"note": "[商品頁][Navigation][商品資訊]顯示上傳的第1~9張圖"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_buyNow.feature",
+		"tags": "@C4106",
+		"note": "[商品頁][Navigation][商品資訊]賣家設的商品描述(文字)"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_buyNow.feature",
+		"tags": "@C3826",
+		"note": "[商品頁][商品資訊][規格][規格一][圖片][有綁商品圖]點選規格連動預覽模組"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_buyNow.feature",
+		"tags": "@C3735",
+		"note": "[商品頁][商品圖][主圖區][主圖>1400x1400]放大圖顯示"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_buyNow.feature",
+		"tags": "@C4796099",
+		"note": "[商品頁][Navigation][商品資訊]影片播放"
+	},
+	{
+		"feature": "cucumber/myAuc/buyerDashboard",
+		"tags": "@C598735",
+		"note": "[買家動態][商品問答][列表][操作][已回覆]顯示已回覆"
+	},
+	{
+		"feature": "cucumber/myAuc/buyerDashboard/favoriteStore.feature",
+		"tags": "@C598882",
+		"note": "[最愛賣家][刪除]成功執行刪除"
+	},
+	{
+		"feature": "cucumber/myAuc/buyerDashboard/watchList.feature",
+		"tags": "@C598800",
+		"note": "[追蹤商品][直購商品][刪除]成功執行刪除"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@C3963",
+		"note": "[商品頁][加入購物車][已登入]click button"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@BUYMULTISPECITEM711"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@CVSEXECUTESHIPMENT",
+		"note": "[訂單列表][尚未出貨][CVS] 點擊訂單操作之執行出貨"
+	},
+	{
+		"feature": "cucumber/orderList_buyer.feature",
+		"tags": "@RATINGBUYER2SELLER",
+		"note": "[訂單列表][給賣家評價] 點擊訂單操作之給賣家評價且成功給評"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@RATINGSELLER2BUYER",
+		"note": "[訂單列表][給買家評價] 點擊訂單操作之給買家評價且成功給評"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@BUYMULTISPECITEMTHUSFAMILYMART"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@C4627962",
+		"note": "[取消訂單][其它原因取消]成功取消"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@BUYMULTISPECITEMTHUSCOD"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@C4627962",
+		"note": "[取消訂單][其它原因取消]成功取消"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@OFFSHELFBASIC"
+	}
+]

@@ -1,0 +1,29 @@
+[
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@CREATEBASIC"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@BUYMULTISPECITEM711"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@CVSEXECUTESHIPMENT",
+		"note": "[訂單列表][尚未出貨][CVS] 點擊訂單操作之執行出貨"
+	},
+	{
+		"feature": "cucumber/orderList_buyer.feature",
+		"tags": "@RATINGBUYER2SELLER",
+		"note": "[訂單列表][給賣家評價] 點擊訂單操作之給賣家評價且成功給評"
+	},
+	{
+		"feature": "cucumber/orderList_seller.feature",
+		"tags": "@RATINGSELLER2BUYER",
+		"note": "[訂單列表][給買家評價] 點擊訂單操作之給買家評價且成功給評"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@OFFSHELFBASIC"
+	}
+]
