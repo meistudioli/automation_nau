@@ -38,9 +38,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
-
-        #Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
-        Then modify item title as "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
+        And modify item title as "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
 
 
     @C4796538 @E2E @PP @PROD
@@ -50,7 +48,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                       
         And I search item as "item - bidding - basic"'s id    
         Then search result must have more than "1" record
-        Then modify item title as "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
+        And modify item title as "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
 
 
     @C4796538X @E2E @PP @PROD
@@ -60,7 +58,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                       
         And I search item as "item - bidding - buynow"'s id    
         Then search result must have more than "1" record
-        Then modify item title as "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
+        And modify item title as "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
 
 
     @C4796565 @E2E @PP @PROD
@@ -70,9 +68,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
-
-        #Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
-        Then modify item price as "9999" must correct
+        And modify item price as "9999" must correct
 
 
     @C4796584 @E2E @PP @PROD
@@ -82,9 +78,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - bidding - basic"'s id 
         Then search result must have more than "1" record 
-
-        #Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
-        Then modify item price as "9999" must correct
+        And modify item price as "9999" must correct
 
 
     @C4796667 @E2E @PP @PROD
@@ -94,8 +88,6 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record
-
-        Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
         When I pick all items
         Then the first row item apply shipping-preference must success
 
@@ -108,9 +100,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
-
-        #Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
-        Then modify item stock as "33" must correct
+        And modify item stock as "33" must correct
 
 
     @C4797529 @E2E @PP @PROD
@@ -120,4 +110,4 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - bidding - basic"'s id 
         Then search result must have more than "1" record 
-        Then modify item stock as "33" must correct
+        And modify item stock as "33" must correct
