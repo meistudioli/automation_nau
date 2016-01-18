@@ -20,6 +20,8 @@ config = {
         dragonItemListModifyBidding: 'cucumber/dragon/dragonItemListModifyBidding.feature',
         dragonRating: 'cucumber/dragon/dragonRating.feature',
         dragonItemStock: 'cucumber/dragon/dragonItemStock.feature',
+        dragonListing: 'cucumber/dragon/dragonListing.feature',
+        dragonBargain: 'cucumber/dragon/dragonBargain.feature',
 
         dragonFace2Face: 'cucumber/dragon/dragonFace2Face.feature',
         dragonOrderMaker: 'cucumber/dragon/dragonOrderMaker.feature',
@@ -178,6 +180,7 @@ env = {
     report: process.env.report || 'result',
     clearResult: process.env.clearResult || 'on',
     excludeMode: process.env.excludeMode || 'off',
+    device: process.env.device || 'desktop',
     partition: process.env.partition || 'prod'
 };
 for (var i in env) env[i] = env[i].trim();
@@ -192,7 +195,16 @@ if (env.parallel == 'on') {
         shardTestFiles: true,
         maxInstances: 3
     };
+    if (env.device == 'mobile' && env.browserName == 'chrome') {
+        config.capabilities.chromeOptions = {
+            args: ['--user-agent="Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.20 Mobile Safari/537.36"']
+        };
+    }//end if
     env.activeMutant = 'off';
+} else if (env.device == 'mobile' && env.browserName == 'chrome') {
+    config.capabilities.chromeOptions = {
+        args: ['--user-agent="Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.20 Mobile Safari/537.36"']
+    };
 }//end if
 
 if (env.activeMutant == 'off') {

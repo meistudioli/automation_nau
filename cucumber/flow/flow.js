@@ -485,7 +485,9 @@ var flow = function() {
 
     // I create a basic multi-spec item
     When(/^I create a basic multi-spec item$/, function(dataObj, next) {
-        var selectType = require(__base + constants.PO.selectType), data, type, payType, shipFee, shipType, itemLocation, world = this, shadow = {};
+        // var selectType = require(__base + constants.PO.selectType), data, type, payType, shipFee, shipType, itemLocation, world = this, shadow = {};
+        var selectType = require(__base + constants.PO.selectType), data, world = this, shadow = {};
+
 
         data = dataObj.hashes()[0];
         data.specs = [
@@ -540,6 +542,78 @@ var flow = function() {
                 shadow.mid = itemId;
             }
         ).then(next, next);
+    });
+
+    
+    //I create a basic none-spec item
+    When(/^I create a basic none-spec item$/, function(dataObj, next) {
+        var selectType = require(__base + constants.PO.selectType), data, world = this, shadow = {};
+
+        data = dataObj.hashes()[0];
+
+        shadow = JSON.parse(JSON.stringify(data));
+        shadow.owner = this.userId;
+        browser.params.shadow.ITEM.buyNow.basic = shadow;
+
+        mutant.createItem('buynow', data).then(
+            function(itemId) {
+                if (typeof world.itemQueue == 'undefined') world.itemQueue = [];
+                world.itemQueue.push(itemId);
+                world.itemId = itemId;
+                //shadowData
+                shadow.mid = itemId;
+            }
+        ).then(next, next);
+    });
+
+
+    // I buy bargain item through COD
+    When(/^I buy bargain item through COD$/, function(next) {
+        var world = this, cartOverviewApp = require(__base + constants.PO.cartOverviewApp), shipType;
+
+        shipType = 'COD';
+
+        // go through mobile web - COD
+        cartOverviewApp = new cartOverviewApp();
+        this.stand = cartOverviewApp;
+
+        cartOverviewApp.go().then(
+            function(cartOverviewApp) {
+                return cartOverviewApp.isBargainExist();
+            }
+        ).then(
+            function(flag) {
+                if (!flag) throw new Error('no bargin exist');
+                return cartOverviewApp.goBargainCheckout();
+            }
+        ).then(
+            function(cartApp) {
+                return cartApp.pickShipTypeAs(shipType);
+            }
+        ).then(
+            function(cartApp) {
+                return cartApp.goSubmit();
+            }
+        ).then(
+            function(orderconfirmApp) {
+                return orderconfirmApp.goSubmit();
+            }
+        ).then(
+            function(ordercompleteApp) {
+                return  ordercompleteApp.getOrderId();
+            }
+        ).then(
+            function(orderId) {
+                // console.log(orderId)
+                world.orderId = orderId;
+            }
+        ).thenCatch(
+            function(err) {
+                throw new Error('buy bargain item fail');
+                next.fail();
+            }
+        ).then(next, next);
+
     });
 
 

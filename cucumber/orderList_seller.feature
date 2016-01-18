@@ -39,7 +39,7 @@ Feature: orderList_seller
         When I filter order by payType - "all"
         And I search order as specific id
         Then search result must exactly be "1"
-        And CVS execute shipment must correct 
+        And "CVS" execute shipment must correct 
 
 
     @RATINGSELLER2BUYER @E2E @PP @PROD
@@ -47,4 +47,12 @@ Feature: orderList_seller
         When I filter order by payType - "all"
         And I search order as specific id
         Then search result must exactly be "1"
-        And rate buyer as "正評+1" must correct 
+        And rate buyer as "正評+1" must correct
+
+
+    @CODEXECUTESHIPMENT @E2E @PP @PROD
+    Scenario: [訂單列表][尚未出貨][COD] 點擊訂單操作之執行出貨
+        When I filter order by payType - "all"
+        And I search order as specific id
+        Then search result must exactly be "1"
+        And "COD" execute shipment must correct 

@@ -199,7 +199,7 @@ Feature: Dragon series - 「dragonMultiSpec」
         When I filter order by payType - "all"  
         And I search order as specific id       
         Then search result must exactly be "1"  
-        And CVS execute shipment must correct   
+        And "CVS" execute shipment must correct 
 
 
     @RATINGBUYER2SELLER @E2E @PP @PROD

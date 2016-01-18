@@ -156,8 +156,8 @@ var orderListSeller = function() {
     });
 
 
-    // CVS execute shipment must correct
-    Then(/^CVS execute shipment must correct$/, function(next) {
+    // "CVS" execute shipment must correct
+    Then(/^"(.*)" execute shipment must correct$/, function(type, next) {
         var stand = this.stand, world = this, operate, PO;
 
         operate = '執行出貨';
@@ -171,17 +171,17 @@ var orderListSeller = function() {
                     }
                 ).then(
                     function() {
-                        PO = require(__base + constants.PO.cvsDeliver);
+                        PO = require(__base + constants.PO[type.toLowerCase()+'Deliver']);
                         return new PO();
                     }
                 );
             }
         ).then(
-            function(cvsDeliver) {
-                //cvsDeliver
-                cvsDeliver.confirmDelivery().then(
-                    function(cvsDeliverResult) {
-                        cvsDeliverResult.getlogisticId().then(
+            function(PODeliver) {
+                //cvsDeliver || codDeliver
+                PODeliver.confirmDelivery().then(
+                    function(PODeliverResult) {
+                        PODeliverResult.getlogisticId().then(
                             function(logisticId) {
                                 expect(logisticId, 'logisticId missing').to.not.be.undefined;
                                 world.logisticId = logisticId;

@@ -56,3 +56,24 @@ Feature: Item Page (Buy Now)
         When I roll to "item navigation"
         Then "video section" must exist
         And video function must correct
+
+
+    @CBARGAIN @E2E @PP @PROD
+    Scenario: [商品頁]誠可議
+        Given I visit "itemPage - buyNow - basic"
+        #Given switch to dummy page - "http://sleevesbelieves.corp.sg3.yahoo.com/Thor/item/itemPage"
+        Then "mark-bargain" must exist
+
+
+    @BARGAINON @E2E @PP @PROD
+    Scenario: [商品頁]buyer can on a bargain event
+        Given I login as "buyer_general"
+        And I visit "itemPage - buyNow - basic"
+        Then I bargain as price "5" must correct
+
+
+    @BARGAINACCETP @E2E @PP @PROD
+    Scenario: [商品頁]seller can accept a bargain event
+        Given I login as "seller_store_b2c"
+        And I visit "itemPage - buyNow - basic"
+        Then I accept a specific bargain must correct

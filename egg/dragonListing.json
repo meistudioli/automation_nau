@@ -1,0 +1,10 @@
+[
+	{
+		"feature": "cucumber/homepage.feature",
+		"tags": "@HP"
+	},
+	{
+		"feature": "cucumber/category.feature",
+		"tags": "@CATEGORY"	
+	}
+]

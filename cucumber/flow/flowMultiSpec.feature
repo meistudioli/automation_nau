@@ -22,6 +22,17 @@ Feature: flow multi-spec item
         Then I can get upper item's merchandise id
 
 
+    @E2E @CREATEBASICNONESPEC
+    Scenario: create a basic none-spec item & plug data in shadow.ITEM.buyNow.basic
+        Given I login as "seller_store_b2c"
+        #Given I pass "seller_store_b2c" DID
+        When I create a basic none-spec item
+        | itemTitle                                         | itemBrief                                   | salePrice  | itemDesc                                    | payType            | barCode       | itemNumber | totalQuantity | videoSet                                        | imageAmount | bargainSwitch | bargainRejectPrice |
+        | [直購品] 測試商品請勿下標, 所有訂單一律取消 - mei | [直購品] 測試商品請勿下標, 所有訂單一律取消 | 10         | [直購品] 測試商品請勿下標, 所有訂單一律取消 | 711,family,cod     | 4710018135606 | ABC        | 3             | http://meistudioli.tumblr.com/post/125311009171 | 9           | 1             | 1                  |
+
+        Then I can get upper item's merchandise id
+
+
     @E2E @CREATEBASICWITHSHIPTYPE
     Scenario: create a basic multi-spec item & plug data in shadow.ITEM.buyNow.basic
         Given I login as "seller_store_b2c"
@@ -98,6 +109,13 @@ Feature: flow multi-spec item
         And "receiverDistrict" must exist
         And "receiverZipcode" must exist
         And "receiverAddress" must exist
+
+
+    @E2E @BETA @PP @PROD @BUYBARGAINTHUSCOD
+    Scenario: buy bargain item through COD
+        Given I login as "buyer_general"
+        When I buy bargain item through COD
+        Then order must be ready
 
 
     @E2E @OFFSHELFBASIC 
