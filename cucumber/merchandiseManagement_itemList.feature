@@ -38,7 +38,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
-        And modify item title as "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
+        Then modify item title as "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
 
 
     @C4796538 @E2E @PP @PROD
@@ -48,7 +48,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                       
         And I search item as "item - bidding - basic"'s id    
         Then search result must have more than "1" record
-        And modify item title as "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
+        Then modify item title as "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
 
 
     @C4796538X @E2E @PP @PROD
@@ -58,7 +58,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                       
         And I search item as "item - bidding - buynow"'s id    
         Then search result must have more than "1" record
-        And modify item title as "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
+        Then modify item title as "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
 
 
     @C4796565 @E2E @PP @PROD
@@ -68,7 +68,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
-        And modify item price as "9999" must correct
+        Then modify item price as "9999" must correct
 
 
     @C4796584 @E2E @PP @PROD
@@ -78,7 +78,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - bidding - basic"'s id 
         Then search result must have more than "1" record 
-        And modify item price as "9999" must correct
+        Then modify item price as "9999" must correct
 
 
     @C4796667 @E2E @PP @PROD
@@ -100,7 +100,7 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
-        And modify item stock as "33" must correct
+        Then modify item stock as "33" must correct
 
 
     @C4797529 @E2E @PP @PROD
@@ -110,4 +110,14 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - bidding - basic"'s id 
         Then search result must have more than "1" record 
-        And modify item stock as "33" must correct
+        Then modify item stock as "33" must correct
+
+
+    @BARGAINSWITCH @E2E @PP @PROD
+    Scenario: [商品管理][列表][直購品][議價][編輯][上架中] 議價 on / off 可成功
+        When I filter item by "buynow"                    
+        And I filter item by status - "onshelf"           
+        And I pick search type as "mid"          
+        And I search item as "item - buyNow - basic"'s id 
+        Then search result must have more than "1" record 
+        Then bargain switch function must correct

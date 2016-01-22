@@ -109,11 +109,6 @@ var merchandiseManagement = function() {
 
     // modify item stock as "33" must correct
     Then(/^modify item stock as "([^"]*)" must correct$/, function(key, next) {
-        // var stand, original, request;
-        // stand = require(__base + constants.PO.listMerchandise);
-        // stand = new stand();
-        // this.stand = stand;
-        // request = Number(key);
         var stand = this.stand, original, request = Number(key);
 
         //listMerchandise
@@ -150,6 +145,36 @@ var merchandiseManagement = function() {
         this.stand.applyShipPreference().then(
             function(flag) {
                 expect(flag, 'apply ship-preference fail').to.be.true;
+            }
+        ).then(next, next);
+    });
+
+
+    // bargain switch function must correct
+    Then(/^bargain switch function must correct$/, function(next) {
+        var mode;
+
+        //listMerchandise
+        this.stand.getFirstRowItemBargainMode().then(
+            function(flag) {
+                expect(flag, 'item bargian mode missing').not.to.be.undefined;
+                mode = flag;
+            }
+        ).then(
+            function() {
+                stand.turnBargain(!mode).then(
+                    function(flag) {
+                        expect(flag, 'itemBargain modify fail').to.be.true;
+                    }
+                );
+            }
+        ).then(
+            function() {
+                stand.turnBargain(mode).then(
+                    function(flag) {
+                        expect(flag, 'itemBargain modify fail 2').to.be.true;
+                    }
+                );
             }
         ).then(next, next);
     });
