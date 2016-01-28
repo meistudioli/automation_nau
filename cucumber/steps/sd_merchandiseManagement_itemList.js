@@ -152,7 +152,7 @@ var merchandiseManagement = function() {
 
     // bargain switch function must correct
     Then(/^bargain switch function must correct$/, function(next) {
-        var mode;
+        var mode, stand = this.stand;
 
         //listMerchandise
         this.stand.getFirstRowItemBargainMode().then(
