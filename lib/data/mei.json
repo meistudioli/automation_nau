@@ -1,0 +1,18 @@
+{
+    "buyNow": {
+        "typeA": {
+            "mid": "100055826721",
+            "itemTitle": "[NewAuc][直購品] 測試商品請勿下標, 所有訂單一律取消 - 刊期x20 - mei",
+            "itemBrief": "[NewAuc][直購品] 測試商品請勿下標, 所有訂單一律取消",
+            "salePrice": 100,
+            "itemDesc": "[NewAuc][直購品] 測試商品請勿下標, 所有訂單一律取消",
+            "itemLocation": "台北市",
+            "payType": "711,family,creditcard,creditcardx3",
+            "promotePrice": 90,
+            "shipFee": 100,
+            "imageAmount": 1,
+            "totalQuantity": 60,
+            "owner": "seller_mei"
+        }
+    }
+}

@@ -1,12 +1,26 @@
 [
 	{
-		"feature": "cucumber/flow/flowMultiSpec.feature",
-		"tags": "@CREATEBASICNONESPEC"
+		"feature": "cucumber/flow/flowBidding.feature",
+		"tags": "@CREATEBIDDINGBASIC"
 	},
 	{
 		"feature": "cucumber/merchandiseManagement_itemList.feature",
-		"tags": "@BARGAINSWITCH",
-		"note": "[商品管理][列表][直購品][議價][編輯][上架中] 議價 on / off 可成功"
+		"tags": "@BARGAINSWITCH4BIDDING",
+		"note": "商品管理][列表][競標品][議價][編輯][上架中] 開啟議價可成功"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_buyNow.feature",
+		"tags": "@CBARGAIN",
+		"note": "[商品頁]誠可議"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@OFFSHELFBASIC"
+	},
+	{
+		"feature": "cucumber/merchandiseManagement_itemList.feature",
+		"tags": "@ONSHELFNBARGAINLIZE",
+		"note": "商品管理][列表][競標品][議價][編輯][下架中][上架]上架且轉換成議價商品"
 	},
 	{
 		"feature": "cucumber/itemPage/itemPage_buyNow.feature",

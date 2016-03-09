@@ -1,7 +1,7 @@
 {
     "buyNow": {
         "basic": {
-            "mid": "100096331785",
+            "mid": "100149185305",
             "itemTitle": "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei",
             "itemBrief": "[直購品] 測試商品請勿下標, 所有訂單一律取消",
             "salePrice": 10,
@@ -34,10 +34,30 @@
                     ]
                 }
             ],
+            "bargainSwitch": "1",
+            "bargainRejectPrice": "1",
+            "owner": "seller_store_b2c"
+        },
+        "nonespec": {
+            "mid": "100149914982",
+            "itemTitle": "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei",
+            "itemBrief": "[直購品] 測試商品請勿下標, 所有訂單一律取消",
+            "salePrice": 10,
+            "itemDesc": "[直購品] 測試商品請勿下標, 所有訂單一律取消",
+            "payType": "711,family,cod",
+            "barCode": "4710018135606",
+            "itemNumber": "ABC",
+            "itemLocation": "台北市",
+            "videoSet": "http://meistudioli.tumblr.com/post/125311009171",
+            "shipFee": 100,
+            "imageAmount": 9,
+            "totalQuantity": 3,
+            "bargainSwitch": "1",
+            "bargainRejectPrice": "1",
             "owner": "seller_store_b2c"
         },
         "clear": {
-            "mid": "100096331876",
+            "mid": "100149186540",
             "itemTitle": "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei",
             "itemBrief": "[直購品] 測試商品請勿下標, 所有訂單一律取消",
             "salePrice": 10,
@@ -50,7 +70,7 @@
     },
     "bidding": {
         "basic": {
-            "mid": "100096331974",
+            "mid": "100149183003",
             "itemTitle": "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei",
             "itemBrief": "[競標] 測試商品請勿下標, 所有訂單一律取消",
             "startPrice": 10,
@@ -61,7 +81,7 @@
             "owner": "seller_store_b2c"
         },
         "buynow": {
-            "mid": "100096331974",
+            "mid": "100149183146",
             "itemTitle": "[競標] 測試商品請勿下標, 所有訂單一律取消 - mei",
             "itemBrief": "[競標] 測試商品請勿下標, 所有訂單一律取消",
             "startPrice": 10,
@@ -102,5 +122,8 @@
         "formats": {
             "breadcrumb": "賣家管理>管理訂單>多筆訂單執行出貨"
         }
+    },
+    "category": {
+        "womensdress": "23000"
     }
 }

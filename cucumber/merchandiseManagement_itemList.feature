@@ -38,6 +38,8 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
+
+        #Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
         Then modify item title as "[直購品] 測試商品請勿下標, 所有訂單一律取消 - mei - m" must correct
 
 
@@ -68,6 +70,8 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
+
+        #Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
         Then modify item price as "9999" must correct
 
 
@@ -78,6 +82,8 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - bidding - basic"'s id 
         Then search result must have more than "1" record 
+
+        #Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
         Then modify item price as "9999" must correct
 
 
@@ -88,6 +94,8 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record
+
+        #Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
         When I pick all items
         Then the first row item apply shipping-preference must success
 
@@ -100,6 +108,8 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"                   
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
+
+        #Given switch to dummy page - "https://devnet020-vm6.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=buynowModify.json"
         Then modify item stock as "33" must correct
 
 
@@ -120,4 +130,32 @@ Feature: Merchandise Management: Item List
         And I pick search type as "mid"          
         And I search item as "item - buyNow - basic"'s id 
         Then search result must have more than "1" record 
+
+        #Given switch to dummy page - "http://sleevesbelieves.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=bargain.json"
         Then bargain switch function must correct
+
+
+    @BARGAINSWITCH4BIDDING @E2E @PP @PROD
+    Scenario: 商品管理][列表][競標品][議價][編輯][上架中] 開啟議價可成功
+        When I filter item by "bidding"                    
+        And I filter item by status - "onshelf"           
+        And I pick search type as "mid"          
+        And I search item as "item - bidding - basic"'s id 
+        Then search result must have more than "1" record 
+
+        #Given switch to dummy page - "http://sleevesbelieves.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=bargain.json"
+        Then bargain switch function must correct
+        And item - "item - bidding - basic" must be offshelf
+
+
+    @ONSHELFNBARGAINLIZE @E2E @PP @PROD
+    Scenario: 商品管理][列表][競標品][議價][編輯][下架中][上架]上架且轉換成議價商品
+        When I filter item by "bidding"                    
+        And I filter item by status - "offshelf"           
+        And I pick search type as "mid"          
+        And I search item as "item - bidding - basic"'s id 
+        Then search result must have more than "1" record
+
+        #Given switch to dummy page - "http://sleevesbelieves.corp.sg3.yahoo.com/Thor/my/itemManagementList?debug_auction_my_itemManage=bargain2.json"
+        Then onshelf & bargainlize function must correct
+        And item - "item - bidding - basic" must be offshelf

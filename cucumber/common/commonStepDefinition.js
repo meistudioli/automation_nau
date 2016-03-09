@@ -32,6 +32,18 @@ var commonStepDefinition = function() {
     Given(/I visit "([^"]*)"/, function(type, next) {
         var stand, param, type = type.replace(/\s/g, '');
         switch(true) {
+            case (/^cartOverviewApp/i.test(type)):
+                stand = require(__base + constants.PO.cartOverviewApp);
+                break;
+            case (/^category/i.test(type)):
+                //I visit "category - women's dress"
+                stand = require(__base + constants.PO.category);
+                if (/(.*)-(.*)/.test(type)) {
+                    this.testData = common.getTestData('category');//testData plug
+                    param = type.replace(/(.*)-(.*)/, '$2').replace(/\'|\s*/g, '').trim();
+                    param = this.testData[param];
+                }//end if
+                break;
             case (/^homepage/i.test(type)):
                 stand = require(__base + constants.PO.homepage);
                 break;

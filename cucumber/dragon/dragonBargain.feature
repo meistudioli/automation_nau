@@ -10,6 +10,18 @@ Feature: Dragon series - 「dragonBargain」
         Then I can get upper item's merchandise id                                      
 
 
+    @BARGAINSWITCH @E2E @PP @PROD
+    Scenario: [商品管理][列表][直購品][議價][編輯][上架中] 議價 on / off 可成功   
+        Given I login as "seller_store_b2c"                    
+        And I visit "item management"                          
+        When I filter item by "buynow"                         
+        And I filter item by status - "onshelf"                
+        And I pick search type as "mid"                        
+        And I search item as "item - buyNow - basic"'s id      
+        Then search result must have more than "1" record      
+        Then bargain switch function must correct              
+
+
     @CBARGAIN @E2E @PP @PROD
     Scenario: [商品頁]誠可議                          
         Given I visit "itemPage - buyNow - basic" 

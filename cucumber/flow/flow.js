@@ -449,6 +449,7 @@ var flow = function() {
         shadow = JSON.parse(JSON.stringify(data));
         shadow.owner = this.userId;
         browser.params.shadow.ITEM.bidding.basic = shadow;
+        // console.log(shadow)
 
         mutant.createItem('bidding', data).then(
             function(itemId) {
