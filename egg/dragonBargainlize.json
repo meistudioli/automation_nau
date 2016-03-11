@@ -1,7 +1,7 @@
 [
 	{
 		"feature": "cucumber/flow/flowBidding.feature",
-		"tags": "@CREATEBIDDINGBASIC"
+		"tags": "@CREATEBARGAINLIZE"
 	},
 	{
 		"feature": "cucumber/merchandiseManagement_itemList.feature",

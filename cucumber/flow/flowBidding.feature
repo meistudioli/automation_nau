@@ -20,6 +20,16 @@ Feature: flow bidding item
         Then I can get upper item's merchandise id
 
 
+    @E2E @CREATEBARGAINLIZE
+    Scenario: create a bidding item & plug data in shadow.ITEM.bidding.basic
+        Given I login as "seller_store_b2c"
+        When I create a basic bidding item
+        | itemTitle                                       | itemBrief                                 | startPrice | itemDesc                                  | payType        | imageAmount | videoSet                                        |
+        | [競標] 測試商品請勿下標, 所有訂單一律取消 - mei | [競標] 測試商品請勿下標, 所有訂單一律取消 | 10         | [競標] 測試商品請勿下標, 所有訂單一律取消 | family,711,cod | 3           | http://meistudioli.tumblr.com/post/125311009171 |
+
+        Then I can get upper item's merchandise id
+
+
     @E2E @CREATEBIDDINGBUYNOW
     Scenario: create a bidding item & plug data in shadow.ITEM.bidding.buynow
         Given I login as "seller_store_b2c"
