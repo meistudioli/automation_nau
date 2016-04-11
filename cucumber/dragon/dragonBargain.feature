@@ -28,6 +28,14 @@ Feature: Dragon series - 「dragonBargain」
         Then "mark-bargain" must exist            
 
 
+    @GA @E2E @PP @PROD
+    Scenario: [商品頁]Google Analytics beacon sending   
+        Given I visit "itemPage - buyNow - basic"      
+        Then Google Analytics beacon must correct      
+        | contentGroup1 | seller      | trackingId    | spaceid    | subtype | itemname                       | sellerName |
+        | itempage      | Y9311276010 | UA-71726228-3 | 2092111773 | buynow  | [直購品] 測試商品請勿下標, 所有訂單一律取消 - mei | mei 新開的店   |
+
+
     @BARGAINON @E2E @PP @PROD
     Scenario: [商品頁]buyer can on a bargain event   
         Given I login as "buyer_general"            

@@ -100,12 +100,12 @@
 	},
 	{
 		"feature": "cucumber/flow/flowMultiSpec.feature",
-		"tags": "@BUYMULTISPECITEM711"
+		"tags": "@BUYMULTISPECITEMTHUSCOD"
 	},
 	{
 		"feature": "cucumber/orderList_seller.feature",
-		"tags": "@CVSEXECUTESHIPMENT",
-		"note": "[訂單列表][尚未出貨][CVS] 點擊訂單操作之執行出貨"
+		"tags": "@CODEXECUTESHIPMENT",
+		"note": "[訂單列表][尚未出貨][COD] 點擊訂單操作之執行出貨"
 	},
 	{
 		"feature": "cucumber/orderList_buyer.feature",
@@ -128,7 +128,7 @@
 	},
 	{
 		"feature": "cucumber/flow/flowMultiSpec.feature",
-		"tags": "@BUYMULTISPECITEMTHUSCOD"
+		"tags": "@BUYMULTISPECITEM711"
 	},
 	{
 		"feature": "cucumber/orderList_seller.feature",

@@ -184,22 +184,22 @@ Feature: Dragon series - 「dragonMultiSpec」
         Then add to shopping cart function must correct 
 
 
-    @E2E @BETA @PP @PROD @BUYMULTISPECITEM711
-    Scenario: buy item through 711              
+    @E2E @BETA @PP @PROD @BUYMULTISPECITEMTHUSCOD
+    Scenario: buy item through COD              
         Given I login as "buyer_general"          
         Given I visit "itemPage - buyNow - basic" 
-        When I buy item through "711"             
+        When I buy item through "cod"             
         Then order must be ready                  
 
 
-    @CVSEXECUTESHIPMENT @E2E @PP @PROD
-    Scenario: [訂單列表][尚未出貨][CVS] 點擊訂單操作之執行出貨   
+    @CODEXECUTESHIPMENT @E2E @PP @PROD
+    Scenario: [訂單列表][尚未出貨][COD] 點擊訂單操作之執行出貨   
         Given I login as "seller_store_b2c"     
         And I visit "orderList(Seller)"         
         When I filter order by payType - "all"  
         And I search order as specific id       
         Then search result must exactly be "1"  
-        And "CVS" execute shipment must correct 
+        And "COD" execute shipment must correct 
 
 
     @RATINGBUYER2SELLER @E2E @PP @PROD
@@ -239,11 +239,11 @@ Feature: Dragon series - 「dragonMultiSpec」
         And cancel order with reason - "賣家取消訂單" must correct 
 
 
-    @E2E @BETA @PP @PROD @BUYMULTISPECITEMTHUSCOD
-    Scenario: buy item through COD              
+    @E2E @BETA @PP @PROD @BUYMULTISPECITEM711
+    Scenario: buy item through 711              
         Given I login as "buyer_general"          
         Given I visit "itemPage - buyNow - basic" 
-        When I buy item through "cod"             
+        When I buy item through "711"             
         Then order must be ready                  
 
 
