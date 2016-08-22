@@ -23,6 +23,7 @@ config = {
         dragonListing: 'cucumber/dragon/dragonListing.feature',
         dragonBargain: 'cucumber/dragon/dragonBargain.feature',
         dragonBargainlize: 'cucumber/dragon/dragonBargainlize.feature',
+        dragonI13n: 'cucumber/dragon/dragonI13n.feature',
 
         dragonFace2Face: 'cucumber/dragon/dragonFace2Face.feature',
         dragonOrderMaker: 'cucumber/dragon/dragonOrderMaker.feature',

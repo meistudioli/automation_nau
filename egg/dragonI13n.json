@@ -1,0 +1,15 @@
+[
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@CREATEBASICNONESPEC"
+	},
+	{
+		"feature": "cucumber/itemPage/itemPage_buyNow.feature",
+		"tags": "@GA",
+		"note": "[商品頁]Google Analytics beacon sending"
+	},
+	{
+		"feature": "cucumber/flow/flowMultiSpec.feature",
+		"tags": "@OFFSHELFBASIC"
+	}
+]

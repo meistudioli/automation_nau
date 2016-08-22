@@ -388,6 +388,30 @@ var commonStepDefinition = function() {
             }
         ).then(next, next);
     });
+
+
+    // Google Analytics beacon must correct
+    Then(/^Google Analytics beacon must correct$/, function(dataObj, next) {
+        var data = dataObj.hashes()[0];
+
+        browser.executeScript(
+            function(request) {
+                var response;
+                if (typeof gaExt != 'undefined') {
+                    response = {};
+                    for (var i in request) response[i] = gaExt.get(i);
+                }//end if
+                return response;
+            }
+        , data).then(
+            function(resObj) {
+                expect(resObj, 'gaExt may not exist').not.to.be.undefined;
+                for (var i in data) {
+                    expect(resObj[i], 'GA data - "'+i+'" error').to.be.eq(data[i]);
+                }//end for
+            }
+        ).then(next, next);
+    });
 };
 
 module.exports = commonStepDefinition;

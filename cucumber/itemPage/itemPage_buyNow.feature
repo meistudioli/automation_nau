@@ -77,3 +77,18 @@ Feature: Item Page (Buy Now)
         Given I login as "seller_store_b2c"
         And I visit "itemPage - buyNow - basic"
         Then I accept a specific bargain must correct
+
+
+    @GA @E2E @PP @PROD
+    Scenario: [商品頁]Google Analytics beacon sending
+        Given I visit "itemPage - buyNow - basic"
+        Then Google Analytics beacon must correct
+        | contentGroup1 | seller      | trackingId    | spaceid    | subtype | itemname                                          | sellerName   |
+        | itempage      | Y9311276010 | UA-71726228-3 | 2092111773 | buynow  | [直購品] 測試商品請勿下標, 所有訂單一律取消 - mei | mei 新開的店 |
+
+
+    @HASHTAG @E2E @PP @PROD
+    Scenario: [商品頁][hashtag]顯示物件的 hashtag
+        Given I visit "itemPage - buyNow - basic"
+        Then "hashtag" must exist
+        And hashtag must be "mei,lauMu"
